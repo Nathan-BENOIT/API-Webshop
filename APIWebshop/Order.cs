@@ -4,17 +4,17 @@ namespace APIWebshop
 {
 	public class Order
 	{
-		public DateTime Date { get; set; }
-		public string? Id { get; set; }
-		public string? CustomerId { get; set; }
+		public DateTime CreatedAt { get; set; }
+		public String? Id { get; set; }
+		public String? CustomerId { get; set; }
 
 		public Order()
 		{
 		}
 
-		public Order(DateTime date, string id, string customerId)
+		public Order(DateTime createdAt, string id, string customerId)
 		{
-			Date = date;
+			CreatedAt = createdAt;
 			Id = id;
 			CustomerId = customerId;
 		}
