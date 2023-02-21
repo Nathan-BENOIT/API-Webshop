@@ -12,19 +12,26 @@ namespace APIWebshop
         public Adress? Adress { get; set; }
         public Profile? Profile { get; set; }
         public Company? Company { get; set; }
-        public Orders? Orders { get; set; }
-        public int Stock { get; set; }
         public int Id { get; set; }
+        public Orders? Orders { get; set; }
 
-        public Produits()
+        public Clients()
         {
         }
 
-        public Produits(DateTime date, string name)
+        public Clients(DateTime date, string name, string username, string firstname, string lastname, Adress adress, Profile profile,
+            Company company, int id, Orders orders, int stock)
         {
             Date = date;
             Name = name;
-            
+            Username = username;
+            FirstName = firstname;
+            LastName = lastname;
+            Adress = adress;
+            Profile = profile;
+            Company = company;
+            Id = id;
+            Orders = orders;
         }
     }
 }
